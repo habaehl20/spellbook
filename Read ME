@@ -1,0 +1,20 @@
+#Spell Book
+
+##Day 1 homework
+
+*make the button change the test of the heading (the h1)
+
+##Bonus
+*add multiple headings and make the button change the second heading (use a 'class' or 'id')
+
+
+
+
+*add a form to the page 
+*add a text input to the form 
+when the form is submitted update the heading with the text taht you type in the text input
+
+
+
+
+make sure to work when you press enter on the key 
