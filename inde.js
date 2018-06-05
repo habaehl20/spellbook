@@ -13,3 +13,11 @@ function change2(){
     heading2.textContent = 'The New SpellBook'
 }
 button2.addEventListener('click',change2)
+
+const form = document.querySelector('form')
+const addForm = function addSpell(ev){
+    ev.preventDefault()
+    document.querySelector("h1").textContent = "Ye Old Spellbook"
+   
+}
+form.addEventListener('submit',change2)
