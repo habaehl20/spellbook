@@ -32,6 +32,25 @@ const changeHeading = function(ev) {
   f.reset()
 }
 
-form.addEventListener('submit', changeHeading)
+
+
+
+const addSound = function(ev) {
+
+    ev.preventDefault()
+  
+    const g = ev.target
+  
+    const spellSound = g.spellSound.value
+  
+    const spellsDiv2 = document.querySelector('#sounds')
+  
+    spellsDiv2.innerHTML += `<li>${spellSound}</li>`
+  
+    g.reset()
+  }
+  
+  form.addEventListener('submit', changeHeading)
+form.addEventListener('submit',addSound)
 
 
