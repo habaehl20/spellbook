@@ -1,5 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|UnifrakturCook:700'));
 
 body {
     font-family: 'Roboto Mono', monospace, sans-serif;
+    background-image: url(https://www.google.com/search?q=wood+background&rlz=1C1CHBF_enUS722US725&tbm=isch&source=iu&ictx=1&fir=S0OWnpr5p9Th8M%253A%252CFbWj4ZtLCSIlPM%252C_&usg=__B3WG-G9B9E6dJbPh-xs75sM_fpU%3D&sa=X&ved=0ahUKEwjh082m7LzbAhUM4oMKHXMdBysQ9QEILTAB#imgrc=S0OWnpr5p9Th8M:);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    background-attachment: fixed;
+}
+
+h1 { 
+color: rgba(200,34,9,0.2);
+font-family: font-family: 'UnifrakturCook', cursive, sans-serif;
 }
