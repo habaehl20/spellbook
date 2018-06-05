@@ -16,8 +16,10 @@ button2.addEventListener('click',change2)
 
 const form = document.querySelector('form')
 const addForm = function addSpell(ev){
+    const f = ev.target
+    const spellName = f.spellName.value
     ev.preventDefault()
-    document.querySelector("h1").textContent = "Ye Old Spellbook"
+    document.querySelector("h1").textContent = spellName
    
 }
 form.addEventListener('submit',change2)
