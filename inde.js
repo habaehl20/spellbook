@@ -7,9 +7,9 @@ function changeH1(){
 button.addEventListener('click',changeH1)
 
 
-const button2 = document.querySelector('.secondButton')
+const button2 = document.querySelector('#bonus')
 function change2(){
-    const heading2 = document.querySelector('.bonus')
+    const heading2 = document.querySelector('#bonus')
     heading2.textContent = 'The New SpellBook'
 }
 button2.addEventListener('click',change2)
