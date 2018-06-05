@@ -14,13 +14,24 @@ function change2(){
 }
 button2.addEventListener('click',change2)
 
+
 const form = document.querySelector('form')
-const addForm = function addSpell(ev){
-    const f = ev.target
-    const spellName = f.spellName.value
-    ev.preventDefault()
-    document.querySelector("#spells").innerHTML += `<p>${spellName}</p>`
-   
-    f.reset()
+
+const changeHeading = function(ev) {
+
+  ev.preventDefault()
+
+  const f = ev.target
+
+  const spellName = f.spellName.value
+
+  const spellsDiv = document.querySelector('#spells')
+
+  spellsDiv.innerHTML += `<li>${spellName}</li>`
+
+  f.reset()
 }
-form.addEventListener('submit',change2)
+
+form.addEventListener('submit', changeHeading)
+
+
