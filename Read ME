@@ -18,3 +18,14 @@ when the form is submitted update the heading with the text taht you type in the
 
 
 make sure to work when you press enter on the key 
+########
+########home work for day 2 
+
+add second field to the form 
+
+add other forms and 
+##bonus credit look up document create element 'apendchild' and try adding the list tiems that way istead of with 'innerHTML'
+
+
+###Other stuff 
+display each value in the list item (the name, whatever other field you add and style them differently somehow and .....)
