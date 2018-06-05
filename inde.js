@@ -18,39 +18,24 @@ button2.addEventListener('click',change2)
 const form = document.querySelector('form')
 
 const changeHeading = function(ev) {
-
-  ev.preventDefault()
+    ev.preventDefault()
 
   const f = ev.target
 
   const spellName = f.spellName.value
+  const spellElixir= f.spellElixir.value
 
   const spellsDiv = document.querySelector('#spells')
+  const list = document.createElement('li')
 
-  spellsDiv.innerHTML += `<li>${spellName}</li>`
+const spellPrint = document.createTextNode(spellName +' '+spellElixir)
+list.appendChild(spellPrint)
+document.body.appendChild(list)
 
   f.reset()
 }
-
-
-
-
-const addSound = function(ev) {
-
-    ev.preventDefault()
-  
-    const g = ev.target
-  
-    const spellSound = g.spellSound.value
-  
-    const spellsDiv2 = document.querySelector('#sounds')
-  
-    spellsDiv2.innerHTML += `<li>${spellSound}</li>`
-  
-    g.reset()
-  }
   
   form.addEventListener('submit', changeHeading)
-form.addEventListener('submit',addSound)
+
 
 
