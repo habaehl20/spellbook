@@ -19,7 +19,8 @@ const addForm = function addSpell(ev){
     const f = ev.target
     const spellName = f.spellName.value
     ev.preventDefault()
-    document.querySelector("h1").textContent = spellName
+    document.querySelector("#spells").textContent += spellName
    
+    f.reset()
 }
 form.addEventListener('submit',change2)
