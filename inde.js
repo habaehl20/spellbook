@@ -19,7 +19,7 @@ const addForm = function addSpell(ev){
     const f = ev.target
     const spellName = f.spellName.value
     ev.preventDefault()
-    document.querySelector("#spells").innerHTML += "<p>" + spellName + "</p>"
+    document.querySelector("#spells").innerHTML += `<p>${spellName}</p>`
    
     f.reset()
 }
