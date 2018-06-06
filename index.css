@@ -145,6 +145,7 @@ input.small{
 
 .spell .name {
   text-decoration: underline;
+  text-decoration-color: rgba(254, 254, 254,0.75);
   max-width: 80%;
   overflow-x: hidden;
   text-overflow: ellipsis;
@@ -152,5 +153,5 @@ input.small{
 }
 
 .level {
-  color: rgb(162, 61, 202);
+  color: rgb(161, 49, 206);
 }
