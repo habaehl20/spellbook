@@ -105,7 +105,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #532c9c;
+  background-color: #a23dca;
 }
 
 main {
@@ -152,5 +152,5 @@ input.small{
 }
 
 .elixir {
-  color: rgb(206, 54, 206);
+  color: rgb(162, 61, 202);
 }
