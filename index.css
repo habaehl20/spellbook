@@ -136,5 +136,21 @@ ul#spells {
 
 input.small{
   flex-grow: 1;
+}
 
+.spell {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spell .name {
+  text-decoration: underline;
+  max-width: 80%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-left: 0.1em;
+}
+
+.elixir {
+  color: rgb(206, 54, 206);
 }

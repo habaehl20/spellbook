@@ -22,7 +22,7 @@ button2.addEventListener('click',change2)
 const app = {
 init: function() {
   const form = document.querySelector('form')
-  form.addEventListener('submit',ev=> {
+  form.addEventListener('submit', ev => {
     this.handleSubmit(ev)
   })
 },
