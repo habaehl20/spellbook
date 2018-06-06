@@ -14,28 +14,65 @@ function change2(){
 }
 button2.addEventListener('click',change2)
 
+///////Start of the form 
 
-const form = document.querySelector('form')
 
-const changeHeading = function(ev) {
-    ev.preventDefault()
+
+////form use an object 
+const app = {
+init: function() {
+  const form = document.querySelector('form')
+  form.addEventListener('submit',ev=> {
+    this.handleSubmit(ev)
+  })
+},
+
+renderProperty: function(name, value) {
+  const el = document.createElement('span')
+  el.textConcent = value
+  el.classList.add(name)
+
+  return el
+},
+
+renderItem: function(spell) {
+  properties = Object.keys(spell)
+
+const childElements = properties.map(property => {
+  return this.renderProperty(property, spell[property])
+})
+
+const item = document.createElement('li')
+item.classList.add('spell')
+
+childElements.forEach(el => {
+  item.appendChild(el)
+})
+
+return item
+},
+
+handleSubmit: function(ev) {
+  ev.preventDefault()
 
   const f = ev.target
 
-  const spellName = f.spellName.value
-  const elixir= f.elixir.value
+  const spell = {
+    name: f.spellName.value,
+    elixir: f.elixir.value,
+  }
 
-  const spellsDiv = document.querySelector('#spells')
-  spellDiv.innerHTML +=`<li> </li>`
+  const item =this.renderItem(spell)
 
-//const spellPrint = document.createTextNode(spellName +' '+spellElixir)
-//list.appendChild(spellPrint)
-//document.body.appendChild(list)
+  const list = document.querySelector('#spells') 
+  list.appendChild(item)
 
   f.reset()
+  },
+
 }
-  
-  form.addEventListener('submit', changeHeading)
 
 
+
+app.init()
 
