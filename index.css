@@ -83,7 +83,7 @@ input[type="text"]:focus {
 }
 
 button[type="submit"] {
-  background-color: #F8BE3D;
+  background-color: #f8be3d;
   color: #0a0a0a;
   height: auto;
   align-self: stretch;

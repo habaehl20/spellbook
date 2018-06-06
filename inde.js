@@ -23,14 +23,14 @@ const changeHeading = function(ev) {
   const f = ev.target
 
   const spellName = f.spellName.value
-  const spellElixir= f.spellElixir.value
+  const elixir= f.elixir.value
 
   const spellsDiv = document.querySelector('#spells')
-  const list = document.createElement('li')
+  spellDiv.innerHTML +=`<li> </li>`
 
-const spellPrint = document.createTextNode(spellName +' '+spellElixir)
-list.appendChild(spellPrint)
-document.body.appendChild(list)
+//const spellPrint = document.createTextNode(spellName +' '+spellElixir)
+//list.appendChild(spellPrint)
+//document.body.appendChild(list)
 
   f.reset()
 }
