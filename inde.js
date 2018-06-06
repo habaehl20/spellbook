@@ -17,50 +17,45 @@ button2.addEventListener('click',change2)
 
 ////form use an object 
 
+const app = {
+  init: function() {
   const form = document.querySelector('form')
-
-  const renderProperty = function(name, value){
+  form.addEventListener('submit', ev => {
+  this.handleSubmit(ev)
+  })
+  },
+  renderProperty: function(name, value) {
   const el = document.createElement('span')
   el.textConcent = value
   el.classList.add(name)
-
   return el
-}
-
-
-const renderItem = function(spell) {
+  },
+  renderItem: function(spell) {
   properties = Object.keys(spell)
-
-  const childElements = properties.map(function(property) {
-    return renderProperty(property, spell[property]) 
-})
-
-const item = document.createElement('li')
-item.classList.add('spell')
-
-childElements.forEach(function(el) {
+  const childElements = properties.map(property => {
+  return this.renderProperty(property, spell[property])
+  })
+  const item = document.createElement('li')
+  item.classList.add('spell')
+  childElements.forEach(el => {
   item.appendChild(el)
-})
-
-return item
-}
-const handleSubmit = function(ev) {
+  })
+  return item
+  },
+  handleSubmit: function(ev) {
   ev.preventDefault()
-
   const f = ev.target
-
   const spell = {
-    name: f.spellName.value,
-    elixir: f.elixir.value,
+  name: f.spellName.value,
+  elixir: f.elixir.value,
   }
-
-  const item = renderItem(spell)
-
+  const item =this.renderItem(spell)
   const list = document.querySelector('#spells') 
   list.appendChild(item)
-
   f.reset()
+  },
   }
-
-form.addEventListener('submit',handleSubmit)
-
+  
+  
+  app.init()
+  
