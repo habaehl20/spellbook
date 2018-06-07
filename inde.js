@@ -16,11 +16,9 @@ const button = document.querySelector('button')
 
 
 ////form use an object 
-const inputArray = []
-
-var i = 0
 
 const app = {
+   inputArray: [],
     init: function() {
       const form = document.querySelector('form')
       form.addEventListener('submit', ev => {
@@ -55,9 +53,17 @@ const app = {
         item.appendChild(el)
       })
 
-      return item
+      //add the delete button
 
-    },
+
+      //add the fav button
+    // .querySelector('button.fav')
+    // addEventListener()
+    //   item.appendChild(favButton)
+      
+    //   return item
+
+    // },
   
 
     handleSubmit: function(ev) {
@@ -73,6 +79,8 @@ const app = {
       const item = this.renderItem(spell)
       const list = document.querySelector('#spells')
       list.appendChild(item)
+
+      //add the el to the list by ....push(inputArray)
 
 
       f.reset()
