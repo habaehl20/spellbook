@@ -22,38 +22,58 @@
 
       -->
 
-<form> 
-    <div>
-        <input 
-            type="text" 
+
+
+      <form>
+        <div>
+          <input
+            type="text"
             name="spellName"
-            placeholder="Spell Name" 
+            placeholder="Enter a spell name"
             autofocus
-        >
-            <input 
+          >
+    
+          <input
             type="number"
             name="level"
             placeholder="Level"
             class="small"
             min="1"
             max="9"
-            >
-            <button type="submit">Add</button>
-        </div>    
-</form>
+          >
+          <button type="submit">Add</button>
+        </div>
+      </form>
+    
+      <main>
 
-<main>
-    <ul id="spells">
+        <ul id="spells">
+        </ul>
+
+      </main>
+
       <li class="spell template">
-        <span class="name"></span> 
-        <span class="level"></span> 
-<!--        <button class="delete">del</button>  
-+        <button class="fav">fav</button> -->
-      </li> 
-    </ul> 
-  </main> 
+        <span class="name"></span>
+        <span class="level"></span>
+    
+        <button class="delete">
+            <i class="far fa-trash-alt" title="remove"></i>
+        </button>
 
+        <button class="move up">
+            <i class="fas fa-arrow-up"></i>
+        </button>
 
-     <script src="inde.js"></script>
-</body>
-</html>
+        <button class="move down">
+            <i class="fas fa-arrow-down"></i>
+        </button>
+
+        <button class="fav">
+            <i class="fas fa-star" title="favorite"></i>
+        </button>
+
+      </li>
+
+      <script src="inde.js"></script>
+    </body>
+    </html>

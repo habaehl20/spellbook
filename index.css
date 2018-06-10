@@ -156,11 +156,29 @@ input.small{
   color: rgb(161, 49, 206);
 }
 
-.spell .name .spellFav{
-  text-decoration: underline;
-  text-decoration-color: #f8be3d;
-  max-width: 80%;
-  overflow-x: hidden;
-  text-overflow: ellipsis;
-  padding-left: 0.1em;
+
+
+button.delete {
+  background-color: #ff3333;
+  color: white;
+}
+
+
+
+button.fav {
+  background-color: #F8BE3D;
+  color: black;
+}
+
+button.move {
+  background-color: #3366ff;
+  color: white;
+}
+
+.spell.fav {
+  background-color: goldenrod;
+}
+
+.template {
+  display: none;
 }
